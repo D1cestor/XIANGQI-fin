@@ -45,7 +45,6 @@ namespace Xiangqi
                             if (eatable || board[i,j] == "* ")
                             {
                                 area.Add($"{i},{j}");
-                                Console.Write(area[area.Count - 1] + " ");
                             }
                         }
                     }
@@ -72,7 +71,6 @@ namespace Xiangqi
                             if (eatable || board[i, j] == "* ")
                             {
                                 area.Add($"{i},{j}");
-                                Console.Write(area[area.Count - 1] + " ");
                             }
                         }
                     }

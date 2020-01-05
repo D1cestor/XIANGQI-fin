@@ -36,7 +36,7 @@ namespace Xiangqi
                 if (board[tempx, y] == "* ")
                 {
                     area.Add($"{tempx},{y}");
-                    Console.Write(area[area.Count - 1] + " ");   // find the coordinate that the cannon can mobve to
+        // find the coordinate that the cannon can mobve to
                 }
                 else
                 {
@@ -54,7 +54,7 @@ namespace Xiangqi
                                 if (enermy[i].getPositionx() == tempx && enermy[i].getPositiony() == y)  //find the chess that cannon can eat
                                 {
                                     area.Add($"{tempx},{y}");
-                                    Console.Write(area[area.Count - 1] + " ");
+                          
                                     eatable = true;
                                     break;
                                 }
@@ -84,7 +84,7 @@ namespace Xiangqi
                 if (board[tempx, y] == "* ")
                 {
                     area.Add($"{tempx},{y}");
-                    Console.Write(area[area.Count - 1] + " ");
+             
                 }
                 else
                 {
@@ -102,7 +102,7 @@ namespace Xiangqi
                                 if (enermy[i].getPositionx() == tempx && enermy[i].getPositiony() == y)
                                 {
                                     area.Add($"{tempx},{y}");
-                                    Console.Write(area[area.Count - 1] + " ");
+                      
                                     eatable = true;
                                     break;
                                 }
@@ -131,7 +131,7 @@ namespace Xiangqi
                 if (board[x, tempy] == "* ")
                 {
                     area.Add($"{x},{tempy}");
-                    Console.Write(area[area.Count - 1] + " ");
+               
                 }
                 else
                 {
@@ -149,7 +149,7 @@ namespace Xiangqi
                                 if (enermy[i].getPositionx() == x && enermy[i].getPositiony() == tempy)
                                 {
                                     area.Add($"{x},{tempy}");
-                                    Console.Write(area[area.Count - 1] + " ");
+                             
                                     eatable = true;
                                     break;
                                 }
@@ -179,7 +179,7 @@ namespace Xiangqi
                 if (board[x, tempy] == "* ")
                 {
                     area.Add($"{x},{tempy}");
-                    Console.Write(area[area.Count - 1] + " ");
+                
                 }
                 else
                 {
@@ -197,7 +197,7 @@ namespace Xiangqi
                                 if (enermy[i].getPositionx() == x && enermy[i].getPositiony() == tempy)
                                 {
                                     area.Add($"{x},{tempy}");
-                                    Console.Write(area[area.Count - 1] + " ");
+                                
                                     eatable = true;
                                     break;
                                 }

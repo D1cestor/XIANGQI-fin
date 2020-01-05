@@ -47,7 +47,7 @@ namespace Xiangqi
                             if (eatable || board[i, j] == "* ")
                             {
                                 area.Add($"{i},{j}");
-                                Console.Write(area[area.Count - 1] + " ");
+                    
                             }
                             for (int l = x+1; l<=9; l++) // Two generals are facing.
                             {
@@ -58,7 +58,7 @@ namespace Xiangqi
                                 if (board[l,y] == "将")
                                 {
                                     area.Add($"{l},{y}");
-                                    Console.Write(area[area.Count - 1] + " ");
+                  
                                     checkmate = true;
                                     break;
                                 }
@@ -95,7 +95,7 @@ namespace Xiangqi
                             if (eatable || board[i, j] == "* ")
                             {
                                 area.Add($"{i},{j}");
-                                Console.Write(area[area.Count - 1] + " ");
+                        
                             }
                             for (int l = x - 1; l >= 0; l--) // Two generals are facing.
                             {
@@ -106,7 +106,7 @@ namespace Xiangqi
                                 if (board[l, y] == "帅")
                                 {
                                     area.Add($"{l},{y}");
-                                    Console.Write(area[area.Count - 1] + " ");
+                              
                                     checkmate = true;
                                     break;
                                 }

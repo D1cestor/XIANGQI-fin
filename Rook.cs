@@ -65,7 +65,7 @@ namespace Xiangqi
                 if (board[tempx, y] == "* ")
                 {
                     area.Add($"{tempx},{y}");
-                    Console.Write(area[area.Count - 1] + " ");
+                 
                 }
                 else
                 {
@@ -75,7 +75,7 @@ namespace Xiangqi
                         {
 
                             area.Add($"{tempx},{y}");
-                            Console.Write(area.Count-1+" ");
+                      
                         }
                     }
                     tempx = x;
@@ -93,7 +93,7 @@ namespace Xiangqi
                 if (board[x, tempy] == "* ")
                 {
                     area.Add($"{x},{tempy}");
-                    Console.Write(area[area.Count - 1] + " ");
+            
                 }
                 else
                 {
@@ -103,7 +103,7 @@ namespace Xiangqi
                         {
 
                             area.Add($"{x},{tempy}");
-                            Console.Write(area[area.Count - 1] + " ");
+                    
                         }
                     }
                     tempy = y;
@@ -121,7 +121,7 @@ namespace Xiangqi
                 if (board[x, tempy] == "* ")
                 {
                     area.Add($"{x},{tempy}");
-                    Console.Write(area[area.Count - 1] + " ");
+          
                 }
                 else
                 {
@@ -131,11 +131,11 @@ namespace Xiangqi
                         {
 
                             area.Add($"{x},{tempy}");
-                            Console.Write(area[area.Count - 1] + " ");
-                            break;
+                
+                           
                         }
                     }
-                
+                    break;
                 }
             }
             return area;

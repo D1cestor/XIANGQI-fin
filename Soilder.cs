@@ -53,12 +53,12 @@ namespace Xiangqi
                     if (this.getTeam() == "red" && x > 4)   // Whether red soilder cross the river.
                     {
                         area.Add($"{x},{y - 1}");
-                        Console.Write(area[area.Count - 1] + " ");
+                    
                     }
                     if (this.getTeam() == "black" && x < 5) // Whether black soilder cross the river.
                     {
                         area.Add($"{x},{y - 1}");
-                        Console.Write(area[area.Count - 1] + " ");
+               
                     }
                 }
             }
@@ -70,12 +70,12 @@ namespace Xiangqi
                     if (this.getTeam() == "red" && x > 4)   // Whether red soilder cross the river.
                     {
                         area.Add($"{x},{y + 1}");
-                        Console.Write(area.Count - 1 + " ");
+        
                     }
                     if (this.getTeam() == "black" && x < 5) // Whether black soilder cross the river.
                     {
                         area.Add($"{x},{y + 1}");
-                        Console.Write(area[area.Count - 1] + " ");
+            
                     }
                 }
             }
@@ -94,7 +94,7 @@ namespace Xiangqi
                     if (front || board[x + 1, y] == "* ")  //Whether there is an enermy or enermy in front of the red soilder.
                     {
                         area.Add($"{x + 1},{y}");
-                        Console.Write(area[area.Count-1] + " ");
+                       
                     }
                 }
             }
@@ -113,7 +113,7 @@ namespace Xiangqi
                     if (front || board[x - 1, y] == "* ")  //Whether there is an enermy or enermy in front of the red soilder.
                     {
                         area.Add($"{x - 1},{y}");
-                        Console.Write(area[area.Count - 1] + " ");
+                  
                     }
                 }
             }

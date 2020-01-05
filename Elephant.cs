@@ -46,7 +46,7 @@ namespace Xiangqi
                                     if (i < 5)
                                     {
                                         area.Add($"{i},{j}");
-                                        Console.Write(area[area.Count - 1] + " ");
+                      
                                     }
                                 }
                             }
@@ -57,7 +57,7 @@ namespace Xiangqi
                                     if (i > 4)
                                     {
                                         area.Add($"{i},{j}");
-                                        Console.Write(area[area.Count - 1] + " ");
+                           
                                     }
                                 }
                             }
