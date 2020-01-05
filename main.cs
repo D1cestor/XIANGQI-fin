@@ -81,7 +81,23 @@ namespace Xiangqi
                     {
                         Console.Write($"{i} ");
                     }
+                    if (g.getChoosedChess().getName() != "")
+                    {
+                        List<string> area = g.getChoosedChess().moveableArea(g.getrc(), g.getbc(), g.getBoard());
+                        string coord = i + "," + j;
+                        if (area.Contains(coord))
+                        {
+                            Console.BackgroundColor = ConsoleColor.Blue;
+                        }
+                    }
+                    string piece = g.getBoard()[i, j];
+                    if (piece == "俥" || piece == "兵" || piece == "炮" || piece == "傌" || piece == "相" || piece == "仕" || piece == "帅")
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    }
                     Console.Write(g.getBoard()[i, j]);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Black;
                 }
                 Console.WriteLine("\n");
             }

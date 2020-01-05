@@ -39,7 +39,6 @@ namespace Xiangqi
                 if (board[tempx, y] == "* ")
                 {
                     area.Add($"{tempx},{y}");
-                    Console.Write(area[area.Count-1]+" ");
                 }
                 else
                 {
@@ -49,7 +48,6 @@ namespace Xiangqi
                         {
 
                             area.Add($"{tempx},{y}");
-                            Console.Write(area[area.Count-1]+" ");
                         }
                     }
                     tempx = x;
