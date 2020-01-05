@@ -31,8 +31,17 @@ namespace Xiangqi
                         Console.WriteLine($"It is team {g.getTeam()}'s turn.Please choose a chess by entering the coordinate.");
                         string input = Console.ReadLine();
                         string[] inputArray = input.Split(",");
+                        if (input.Length != 3)
+                        {
+                            throw new ArgumentException("This is not a coordinate!");
+                        }
                         int x = Int32.Parse(inputArray[0]);
                         int y = Int32.Parse(inputArray[1]);
+                        if (x > 9 || x <0 || y < 0 || y > 8)
+                        {
+                            throw new ArgumentException("This is not a coordinate!");
+                        }
+
                         g.ChoosePiece(x, y);
                         ChangeState(GameState.SelectMove);
                         break;
